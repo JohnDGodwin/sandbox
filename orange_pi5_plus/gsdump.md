@@ -148,9 +148,7 @@ Plug in the camera and watch the packets come in, xlost should stay near zero wh
 graphical environment for gstreamer playback
 
 
-`sudo apt install --no-install-recommends xorg`
-
-`sudo apt install --no-install-recommends lightdm-gtk-greeter lightdm openbox`
+`sudo apt install --no-install-recommends xorg lightdm-gtk-greeter lightdm openbox`
 
 Then edit	
 
