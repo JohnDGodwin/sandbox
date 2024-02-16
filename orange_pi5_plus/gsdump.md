@@ -194,7 +194,7 @@ Save your desired background image to /home/ubuntu/desktop.png
 a script to set the display resolution to 1280x720
 
 
-`sudo nano /home/ubuntu/setdisplay.sh`
+`sudo nano /home/ubuntu/scripts/setdisplay.sh`
 
 
  insert:
@@ -228,7 +228,7 @@ Make Videos directory
 
 Make the script
 
-`sudo nano /home/ubuntu/dvr.sh`
+`sudo nano /home/ubuntu/scripts/dvr.sh`
 
  insert:
 
@@ -281,11 +281,11 @@ Finally:
  
 add:	
 
-	bash /home/ubuntu/setdisplay.sh
+	bash /home/ubuntu/scripts/setdisplay.sh
 
 	hsetroot -cover /home/ubuntu/desktop.png &
 
-	sudo /home/ubuntu/dvr.sh &
+	sudo /home/ubuntu/scripts/dvr.sh &
 
 To display the video stream to the screen borderless we do the following.
 
