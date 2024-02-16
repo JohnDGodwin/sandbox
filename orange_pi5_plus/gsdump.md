@@ -419,7 +419,7 @@ And run them one at a time:
 
 `./buildFFMPEG.sh`
 
-Now we can use ffmpeg to hardware transcode the mkv video files to hevc mp4. We can have this automatically happen at the end of each recording by augmenting the dvr.sh script. Open the dvr.sh script in your /home/ubuntu directory, find the line `kill $RUNNING` and add the following two lines below it.
+Now we can use ffmpeg to hardware transcode the mkv video files to hevc mp4. We can have this automatically happen at the end of each recording by augmenting the dvr.sh script. Open the dvr.sh script in your /home/ubuntu/scripts directory, find the line `kill $RUNNING` and add the following two lines below it.
 
 	sleep 0.2
  	ffmpeg -hwaccel rkmpp -i record_${current_date}.mkv -c:v hevc_rkmpp record_${current_date}.mp4
