@@ -275,6 +275,9 @@ Make the script
 
 Make the scripts executable with chmod +x.
 
+`sudo chmod +x /home/ubuntu/scripts/dvr.sh /home/ubuntu/scripts/setdisplay.sh`
+
+
 Finally:
 
 `sudo nano /etc/xdg/openbox/autostart`
