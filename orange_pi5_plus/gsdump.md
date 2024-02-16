@@ -199,17 +199,21 @@ a script to set the display resolution to 1280x720
 
  insert:
 
+
 	#/bin/bash
 	export DISPLAY=:0
 
+	#set your desired screen resolution here
+	MODE=1280x720
+
+
 	if [[ $(xrandr | awk '/HDMI-1/ {print $2}') == "connected" ]]; then
- 	xrandr --output HDMI-1 --mode 1280x720
+	        xrandr --output HDMI-1 --mode $MODE
 	fi
 	if [[ $(xrandr | awk '/HDMI-2/ {print $2}') == "connected" ]]; then
- 	xrandr --output HDMI-2 --mode 1280x720
+	        xrandr --output HDMI-2 --mode $MODE
 	fi
- 	exit 0
-
+	exit 0
 
 
 
