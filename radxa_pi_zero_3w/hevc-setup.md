@@ -63,22 +63,4 @@ And run them one at a time:
 `./buildFFMPEG.sh`
 
 
-gstreamer
-
-`sudo nano buildGSTREAMRROCKCHIP.sh`
-
-    mkdir -p ~/GSTREAMER && cd ~/GSTREAMER
-    git clone --branch gstreamer-rockchip https://github.com/JeffyCN/rockchip_mirrors.git
-    meson setup build_gsteamer \
-      --prefix=/usr \
-      --libdir=lib \
-      --buildtype=release \
-      --default-library=shared
-    meson configure build_gstreamer
-    sudo ninja -C build_gstreamer install
-
-
-
-
-
     
