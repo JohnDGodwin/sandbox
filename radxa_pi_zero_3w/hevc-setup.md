@@ -69,13 +69,13 @@ gstreamer
 
     mkdir -p ~/GSTREAMER && cd ~/GSTREAMER
     git clone --branch gstreamer-rockchip https://github.com/JeffyCN/rockchip_mirrors.git
-    meson setup build_ffmpeg \
+    meson setup build_gsteamer \
       --prefix=/usr \
       --libdir=lib \
       --buildtype=release \
       --default-library=shared
-    meson configure build_ffmpeg
-    sudo ninja -C build_ffmpeg install
+    meson configure build_gstreamer
+    sudo ninja -C build_gstreamer install
 
 
 
