@@ -1,4 +1,4 @@
-Building MPP, RGA, Gstreamer, and ffMPEG from scratch
+Building MPP, RGA, and ffMPEG from scratch
 
 `sudo apt install cmake meson`
 
