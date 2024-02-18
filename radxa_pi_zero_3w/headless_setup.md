@@ -36,7 +36,7 @@ Enter the following, replacing your_SSID, your_password, and your_interface as n
 
 `sudo apt install --no-install-recommends network-manager`
 
-`nmcli connection add ifname wlan0 type wifi ssid Your_SSID`
+`nmcli connection add ifname your_interface type wifi ssid Your_SSID`
 
 `nmcli connection edit wifi-your_interface`
 
