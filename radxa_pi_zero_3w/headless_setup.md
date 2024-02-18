@@ -1,4 +1,4 @@
-<h1>Headless Mode -- connection of wifi, setup of autoconnect to your home wifi, and installation of ssh </h1>
+<h1>Headless Mode -- connection of wifi, setup of autoconnect to your home wifi </h1>
 
 <h3>initial connection</h3>
 
@@ -48,14 +48,6 @@ Enter the following, replacing your_SSID, your_password, and your_interface as n
 	nmcli 802-11-wireless-security> set psk Your_Password
 	nmcli 802-11-wireless-security> save
 	nmcli 802-11-wireless-security> quit
-
-***
-
-<h3>SSH</h3>
-
-	sudo apt install ssh
- 	sudo systemctl enable ssh
-  	sudo systemctl start ssh
 
 ***
 
