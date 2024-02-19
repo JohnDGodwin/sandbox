@@ -6,7 +6,8 @@ This changes all wifi cards connect to be wlan0
 
 `sudo nano /etc/udev/rules.d/99-custom-wifi.rules`
 
-    SUBSYSTEM=="net", ACTION=="add", ATTR{type}=="1", ATTR{address}=="98:03:cf:c6:e5:bc", NAME="wlan1"
+    SUBSYSTEM=="net", ACTION=="add", ATTR{type}=="1", ATTR{address}=="98:03:cf:*:*:*", NAME="wlan1"
 
 reboot
 
+SUBSYSTEM=="net", ACTION=="add", ATTR{type}=="1", ATTR{address}=="98:03:cf:*:*:*", NAME="wlan1"
