@@ -10,4 +10,3 @@ This changes all wifi cards connect to be wlan0
 
 reboot
 
-SUBSYSTEM=="net", ACTION=="add", ATTR{type}=="1", ATTR{address}=="98:03:cf:*:*:*", NAME="wlan1"
