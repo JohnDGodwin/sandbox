@@ -178,7 +178,7 @@ At this point, reboot and you will have to login with a keyboard at least once, 
 let's set the desktop wallpaper and write some startup scripts
 
 	
-`sudo apt install libimlib2-dev libx11-dev libxinerama-dev pkg-config make`
+`sudo apt install --no-install-recommends libimlib2-dev libx11-dev libxinerama-dev pkg-config make`
 
 `git clone https://github.com/himdel/hsetroot.git`
 
