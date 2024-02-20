@@ -6,7 +6,7 @@ Download Ubuntu Server ISO and flash to device  -- https://github.com/Joshua-Rie
 
 Go ahead and pull some packages we will need, too.
 
-`sudo apt install --no-install-recommends dkms network-manager`
+`sudo apt install --no-install-recommends network-manager`
 
 `sudo apt install python3-all-dev fakeroot cmake meson`
 
