@@ -20,6 +20,12 @@ Build MPP
 
 `cd mpp`
 
+`cmake`
+
+`make -j4`
+
+`sudo make install`
+
 ***
 
 Build RGA
