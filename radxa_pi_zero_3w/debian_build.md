@@ -115,7 +115,7 @@ Then:
 
 `sudo nano /etc/xdg/openbox/autostart`
 
-    bash /home/ubuntu/scripts/setdisplay.sh
+    bash /home/radxa/scripts/setdisplay.sh
     hsetroot -cover /home/radxa/desktop.png &
 
 
