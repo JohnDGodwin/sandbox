@@ -34,8 +34,6 @@ Build RGA
 
 `meson setup build --buildtype=release --default-library=shared -Dcpp_args=-fpermissive -Dlibdrm=false -Dlibrga_demo=false`
 
-`meson configure build`
-
 `sudo ninja -C build install`
 
 ***
