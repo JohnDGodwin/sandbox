@@ -1,21 +1,52 @@
-Add the repository
+`git clone https://github.com/rockchip-linux/mpp.git --depth=1`
 
-`sudo add-apt-repository ppa:liujianfeng1994/rockchip-multimedia`
+`git clone -b jellyfin-rga --depth=1 https://github.com/nyanmisaka/rk-mirrors.git`
 
-`sudo apt update`
+`git clone https://gitlab.freedesktop.org/gstreamer/gstreamer.git --depth=1`
+
+`git clone --branch gstreamer-rockchip --depth=1 https://github.com/JeffyCN/rockchip_mirrors.git`
+
+`sudo apt install ninja-build libudev-dev libdrm-dev libva-dev freeglut3-dev pip`
+
+`pip install meson`
+
+
+
+*run ldconfig after each install below*
 
 ***
 
-install gstreamer with hardware acceleration
+Build MPP
 
-`sudo apt --no-install-recommends install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-gl`
-
-`sudo apt install gstreamer1.0-rockchip1 librga-dev librga2 librockchip-mpp-dev librockchip-mpp1 librockchip-vpu0 libv4l-rkmpp rockchip-multimedia-config`
+`cd mpp`
 
 ***
 
-test
+Build RGA
 
-`gst-inspect-1.0 | grep 265`
+`cd rk-mirrors`
 
-`gst-inspect-1.0 | grep mpp`
+`meson setup build --buildtype=release --default-library=shared -Dcpp_args=-fpermissive -Dlibdrm=false -Dlibrga_demo=false`
+
+`meson configure build`
+
+`sudo ninja -C build install`
+
+***
+
+build gstreamer
+
+`cd gstreamer`
+
+`meson setup build --buildtype=release --default-library=shared`
+
+`meson configure build`
+
+`sudo ninja -C build install`
+
+***
+
+build gstreamer-rockchip
+
+`cd rockchip-mirrors`
+
