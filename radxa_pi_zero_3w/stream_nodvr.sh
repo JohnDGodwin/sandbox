@@ -1,4 +1,4 @@
-  GNU nano 6.2                                                    dvr.sh                                                              #!/bin/bash
+#!/bin/bash
 
 export DISPLAY=:0
 
