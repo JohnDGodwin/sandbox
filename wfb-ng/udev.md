@@ -5,7 +5,7 @@ This changes all wifi cards connect to be wlan0
     SUBSYSTEM=="net", KERNEL=="wlan*", ACTION=="add", NAME="wlan0"
 
 
-This changes the internal wifi to wlan1
+This changes the raxda zero 3w internal wifi to wlan1
 
 `sudo nano /etc/udev/rules.d/99-custom-wifi.rules`
 
