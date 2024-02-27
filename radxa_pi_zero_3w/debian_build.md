@@ -47,7 +47,7 @@ Enter the following, replacing your_SSID, your_password, and your_interface as n
 
  Remove XFCE4
 
- `sudo apt remove xfce4`
+ `sudo apt purge xfce4`
 
  `sudo apt autoremove`
 
