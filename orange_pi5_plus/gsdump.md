@@ -397,7 +397,6 @@ Third we build ffmpeg with rkmpp and rkrga support.
  	   -Dcpp_args=-fpermissive \
  	   -Dlibdrm=false \
  	   -Dlibrga_demo=false
-	meson configure rkrga_build
 	sudo ninja -C rkrga_build install
 
 `sudo nano buildFFMPEG.sh`
