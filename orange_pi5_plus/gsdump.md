@@ -8,7 +8,13 @@ Go ahead and pull some packages we will need, too.
 
 `sudo apt install --no-install-recommends network-manager`
 
-`sudo apt install dkms python3-all-dev fakeroot cmake meson`
+`sudo apt install dkms python3-all-dev fakeroot cmake ninja-build`
+
+`sudo apt install pip`
+
+`pip install meson`
+
+add to path
 
 Set system local timezone - replace region and city with your usecase
 
