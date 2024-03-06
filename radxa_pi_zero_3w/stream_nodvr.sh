@@ -10,7 +10,6 @@ gpio_offset="8"
 while true; do
     if [ $(sudo gpioget $gpio_chip $gpio_offset) -eq 1 ]; then
     if [ $RUNNING -eq 0 ]; then
-            current_date=$(date +'%m-%d-%Y_%H-%M-%S')
 
         gst-launch-1.0 -e \
             udpsrc port=5600 caps='application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H265' ! \
@@ -18,7 +17,7 @@ while true; do
             h265parse ! \
             mppvideodec ! \
             videoconvert ! \
-            autovideosink sync=false &
+            kmssink plane-id=79 &
 
             RUNNING=$!
     else
