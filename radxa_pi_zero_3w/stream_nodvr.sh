@@ -17,7 +17,7 @@ while true; do
             h265parse ! \
             mppvideodec ! \
             videoconvert ! \
-            kmssink plane-id=79 &
+            kmssink plane-id=76 &
 
             RUNNING=$!
     else
