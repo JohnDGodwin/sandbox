@@ -1,6 +1,13 @@
 Building MPP, RGA, and ffMPEG from scratch
 
-`sudo apt install cmake meson`
+`sudo apt-get update -qq && sudo apt-get -y install autoconf automake build-essential cmake git-core libass-dev libfreetype6-dev libgnutls28-dev libmp3lame-dev libsdl2-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev meson ninja-build pkg-config texinfo wget yasm zlib1g-dev libunistring-dev libaom-dev libdav1d-dev`
+
+<br>
+
+`sudo apt install nasm libx264-dev libx265-dev libnuma-dev`
+
+<br>
+
 
 
 `sudo nano buildMPP.sh`
@@ -40,7 +47,7 @@ Building MPP, RGA, and ffMPEG from scratch
 	mkdir -p ~/ffmpeg && cd ~/ffmpeg
 	git clone --depth=1 https://github.com/nyanmisaka/ffmpeg-rockchip.git ffmpeg
 	cd ffmpeg
-	./configure --prefix=/usr --enable-gpl --enable-version3 --enable-libdrm --enable-rkmpp --enable-rkrga
+	./configure --prefix=/usr --enable-gpl --enable-version3 --enable-libdrm --enable-rkmpp --enable-rkrga --enable-libx264 --enable-libx265 --extra-libs="-lpthread" --extra-cflags="-march=native" --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
 	make -j $(nproc)
 
 	./ffmpeg -decoders | grep rkmpp
