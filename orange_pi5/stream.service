@@ -1,0 +1,12 @@
+[Unit]
+Description=stream_video
+
+[Service]
+User=orangepi
+ExecStart=/home/orangepi/scripts/stream.sh
+
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
