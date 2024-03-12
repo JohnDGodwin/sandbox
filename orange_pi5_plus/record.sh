@@ -20,7 +20,6 @@ if [ $RUNNING -eq 0 ]; then
         tee name=t ! \
         queue ! \
         mppvideodec ! \
-        videoconvert ! \
         autovideosink sync=false t. ! \
         queue ! \
         matroskamux ! \
