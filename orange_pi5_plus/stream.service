@@ -1,0 +1,11 @@
+[Unit]
+Description=stream_with_dvr
+
+[Service]
+ExecStart=/home/orangepi/scripts/stream.sh
+
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
