@@ -13,10 +13,9 @@ export DISPLAY=:0
 while true; do
     if [ $(gpioget $gpio_chip $gpio_offset) -eq 0 ]; then
 
-        kill -15 $STREAMING
-        sleep 0.1
-        
         if [ $RUNNING -eq 0 ]; then
+            kill -15 $STREAMING
+            sleep 0.1
             current_date=$(date +'%m-%d-%Y_%H-%M-%S')
 
                 gst-launch-1.0 -e \
