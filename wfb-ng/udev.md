@@ -13,3 +13,10 @@ This changes the raxda zero 3w internal wifi to wlan1
 
 reboot
 
+***
+
+This is for the Orange Pi 3b internal wifi to change to wlan1
+
+`sudo nano /etc/udev/rules.d/99-custom-wifi.rules`
+
+    SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="40:9c:a7:*:*:*", NAME="wlan1"
