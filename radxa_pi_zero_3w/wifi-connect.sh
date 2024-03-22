@@ -7,7 +7,7 @@ echo "Connecting to $1 with password $2"
 sleep 0.1
 
 
-nmcli connection add ifname your_interface type wifi ssid $1
+nmcli connection add ifname wlan1 type wifi ssid $1
 
 nmcli connection edit wifi-wlan1 <<EOF
 goto wifi
