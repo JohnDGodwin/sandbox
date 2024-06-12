@@ -42,7 +42,7 @@ WFB-ng installation
 
 find wifi device name using iwconfig and substitute it for $WLAN in the script install
 
-`git clone -b stable https://github.com/svpcom/wfb-ng.git`
+`git clone https://github.com/svpcom/wfb-ng.git`
 
 `cd wfb-ng`
 
