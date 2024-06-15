@@ -20,7 +20,7 @@ enter the following line-by-line
 
 
 
-`git clone -b v5.2.20 https://github.com/svpcom/rtl8812au.git`
+`git clone https://github.com/svpcom/rtl8812au.git`
 
 ``cd rtl8812au/``
 
