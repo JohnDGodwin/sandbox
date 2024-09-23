@@ -22,13 +22,22 @@ enter the following line-by-line
 
 `git clone https://github.com/svpcom/rtl8812au.git`
 
-``cd rtl8812au/``
+`cd rtl8812au/`
 
 `sudo ./dkms-install.sh`
 
 
 ***
 
+rtl8812eu driver installation
+
+`git clone https://github.com/svpcom/rtl8812eu.git`
+
+`cd rtl8812eu`
+
+`sudo ./dkms-install.sh`
+
+***
 
 reboot device 
 
