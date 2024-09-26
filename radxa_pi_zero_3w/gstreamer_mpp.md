@@ -18,13 +18,13 @@
 
 Build MPP
 
+`git clone https://github.com/rockchip-linux/mpp.git`
+
 `cd mpp`
 
-`cmake`
+`cmake -B build`
 
-`make -j4`
-
-`sudo make install`
+`sudo cmake --build build --target install`
 
 ***
 
@@ -54,3 +54,10 @@ build gstreamer-rockchip
 
 `cd rockchip-mirrors`
 
+`meson setup build --buildtype=release --default-library=shared`
+
+`meson compile -C build`
+
+`cd build`
+
+`sudo ninja install`
