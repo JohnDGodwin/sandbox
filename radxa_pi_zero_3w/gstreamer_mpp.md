@@ -6,7 +6,7 @@
 
 `git clone --branch gstreamer-rockchip --depth=1 https://github.com/JeffyCN/rockchip_mirrors.git`
 
-`sudo apt install pkg-config flex bison ninja-build libudev-dev libdrm-dev libva-dev freeglut3-dev pip`
+`sudo apt install cmake pkg-config flex bison ninja-build libudev-dev libdrm-dev libva-dev freeglut3-dev pip`
 
 `pip install meson`
 
