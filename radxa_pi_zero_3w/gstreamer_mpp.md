@@ -52,7 +52,7 @@ build gstreamer
 
 build gstreamer-rockchip
 
-`cd rockchip-mirrors`
+`cd rockchip_mirrors`
 
 `meson setup build --buildtype=release --default-library=shared`
 
