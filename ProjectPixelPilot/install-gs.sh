@@ -60,5 +60,14 @@ sudo cmake --build build --target install
 cd ..
 
 
+#configure hotplugging of wfb-nics
+git clone https://github.com/JohnDGodwin/hot-plug-wfb-nics.git
+cd hot-plug-wfb-nics
+sudo chmod +x autoload-wfb-nics.sh
+sudo cp autoload-wfb-nics.sh /config/scripts/
+sudo cp init-nics.service /etc/systemd/system/
+sudo systemctl enable init-nics.service
+sudo cp 98-custom-wifi.rules /etc/udev/rules.d/
+cd ..
 
 
