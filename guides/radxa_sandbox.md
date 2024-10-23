@@ -1,4 +1,6 @@
-<h1>How to make a custom Radxa Zero 3 img</h1>
+<h1>How to make a custom Radxa Zero 3 image - A guide to QEMU with ARM64</h1>
+
+  By following these steps, you will be able to successfully modify the Radxa sandbox.img from a linux PC. We need to "log-in" to the image with chroot to make changes. Chrooting into an aarch64 system from an x86_64 machine involves setting up an environment that can emulate aarch64 architecture. To chroot into an ARM64 (aarch64) architecture image on an x86_64 architecture PC, you'll need to use QEMU to emulate the ARM64 environment.
 
 <h3>Step 1 - Set up your host system</h3>
 
