@@ -2,7 +2,7 @@
 
 <h3>Step 1 - Set up your host system</h3>
 
-  Debian 12 is recommended. QEMU has [bug](https://github.com/docker/buildx/issues/1170#issuecomment-2136084089) with later Ubuntu distros when chrooting into an aarch64 environment.
+  Debian 12 is recommended. QEMU has a [bug](https://github.com/docker/buildx/issues/1170#issuecomment-2136084089) with later Ubuntu distros when chrooting into an aarch64 environment.
 
 <h3>Step 2 - Install required packages</h3>
 
