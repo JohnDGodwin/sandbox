@@ -1,4 +1,4 @@
-###How to build Radxa Zero3 image with RSDK
+How to build Radxa Zero3 image with RSDK
 
 MUST BE BUILT IN UBUNTU 20.04 (Debian 12 *might* work but I've had the build fail)
 
