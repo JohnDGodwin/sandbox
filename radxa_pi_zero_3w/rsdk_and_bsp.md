@@ -26,7 +26,9 @@ The command `rsdk devcon up` will take some time while the build environment dow
 When the image is done, it will be located at `rsdk/out/output.img`
 
 
-###How to build Radxa Zero3 kernel with BSP
+
+
+How to build Radxa Zero3 kernel with BSP
 
 Use same build environment as RSDK. Ubuntu 20.04.
 
