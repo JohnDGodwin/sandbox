@@ -60,7 +60,7 @@ Remove this, around line 1612ish:
 ```
 if (soc_is_rk3566t) {
 	if (!strcmp(dev_name(dev), "cpu0")) {
-		dev_pm_opp_remove(dev, 1608000000);Add commentMore actions
+		dev_pm_opp_remove(dev, 1608000000);
 		dev_pm_opp_remove(dev, 1800000000);
 		dev_pm_opp_remove(dev, 1992000000);
 	}
